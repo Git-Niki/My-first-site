@@ -1,0 +1,129 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-conteiner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.flex-item1-header {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    
+    background: linear-gradient(180deg, rgb(228, 109, 191), rgb(77, 223, 225));
+    background-size: 100% 100vh;
+    border: 1px solid rgb(28, 27, 27);
+
+}
+
+.flex-item1-1-logo {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+
+    border: 1px solid rgb(28, 27, 27);
+}
+
+.logo-header {
+    width: 200px;
+    height: 100px;
+    
+}
+
+.flex-item1-2-nav {
+    height: 50px;
+    margin: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+   
+    border: 1px solid rgb(28, 27, 27);
+}
+
+.flex-item2 {
+    flex: 1;
+
+    border: 1px solid rgb(28, 27, 27);
+}
+
+.flex-item2-1 {
+    height: 800px;
+
+    background: linear-gradient(180deg, rgb(107, 11, 105), rgb(77, 223, 225));
+    border: 1px solid rgb(28, 27, 27);
+}
+
+.flex-item2-2 {    
+    background: linear-gradient(180deg, rgb(180, 185, 24), rgb(77, 223, 225));
+    height: 500px;
+    border: 1px solid rgb(28, 27, 27);
+}
+
+.flex-item2-3 {
+    height: 800px;
+
+    background: linear-gradient(180deg, rgb(177, 13, 35), rgb(77, 223, 225));
+    border: 1px solid rgb(28, 27, 27);
+}
+
+.flex-item2-4 {
+    height: 600px;
+
+    background: linear-gradient(180deg, rgb(22, 7, 159), rgb(77, 223, 225));
+    border: 1px solid rgb(28, 27, 27);
+}
+
+.flex-item2-5 {
+    height: 500px;
+
+    background: linear-gradient(180deg, rgb(116, 176, 4), rgb(77, 223, 225));
+    border: 1px solid rgb(28, 27, 27);
+}
+
+
+.flex-item3 { 
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    background: linear-gradient(0deg, rgb(49, 94, 113), rgb(77, 223, 225));
+    border: 1px solid rgb(28, 27, 27);
+}
+
+.flex-item3-1 {
+    align-self: center;
+
+    border: 1px solid rgb(28, 27, 27);
+}
+
+.logo-footer {
+    width: 200px;
+    height: 100px;
+}
+
+.flex-item3-2 {
+    align-self: center;
+
+    border: 1px solid rgb(28, 27, 27);
+}
+
+.flex-item3-3 {
+    align-self: center;
+    border: 1px solid rgb(28, 27, 27);
+}
+.flex-item3-4 {
+    align-self: center;
+
+    border: 1px solid rgb(28, 27, 27);
+}
