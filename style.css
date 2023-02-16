@@ -1,11 +1,4 @@
-html, body {
-    margin: 0px;
-    padding: 0px;
-}
-
-* {
-    box-sizing: border-box;
-}
+@import url("reset.css");
 
 .flex-conteiner {
     min-height: 100vh;
