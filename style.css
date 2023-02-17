@@ -1,11 +1,13 @@
 @import url("reset.css");
 
-.flex-conteiner {
+.conteiner {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     
 }
+
+/* header */
 
 .flex-item1-header {
     width: 100%;
@@ -15,8 +17,6 @@
     
     background: linear-gradient(180deg, rgb(228, 109, 191), rgb(77, 223, 225));
     background-size: 100% 100vh;
-    border: 1px solid rgb(28, 27, 27);
-
 }
 
 .flex-item1-1-logo {
@@ -43,46 +43,56 @@
     border: 1px solid rgb(28, 27, 27);
 }
 
+/* main */
+
 .flex-item2 {
     flex: 1;
-
-    border: 1px solid rgb(28, 27, 27);
 }
 
-.flex-item2-1 {
-    height: 800px;
+.biography {
+    max-width: 1200px;  /* делает блок по центру экрана */
+    margin: 0px auto;
+    padding: 0px 15px;  /* отступ нужен при сужении экрана */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 
-    background: linear-gradient(180deg, rgb(107, 11, 105), rgb(77, 223, 225));
-    border: 1px solid rgb(28, 27, 27);
+    background: linear-gradient(180deg, rgb(11, 107, 65), rgb(77, 223, 225));
+}
+
+.biography-foto1 {
+    
+    max-width: 25%;
+}
+.biography-foto2 {
+    
+    max-width: 25%;
 }
 
 .flex-item2-2 {    
     background: linear-gradient(180deg, rgb(180, 185, 24), rgb(77, 223, 225));
     height: 500px;
-    border: 1px solid rgb(28, 27, 27);
 }
 
 .flex-item2-3 {
     height: 800px;
 
     background: linear-gradient(180deg, rgb(177, 13, 35), rgb(77, 223, 225));
-    border: 1px solid rgb(28, 27, 27);
 }
 
 .flex-item2-4 {
     height: 600px;
 
     background: linear-gradient(180deg, rgb(22, 7, 159), rgb(77, 223, 225));
-    border: 1px solid rgb(28, 27, 27);
 }
 
 .flex-item2-5 {
     height: 500px;
 
     background: linear-gradient(180deg, rgb(116, 176, 4), rgb(77, 223, 225));
-    border: 1px solid rgb(28, 27, 27);
 }
 
+/* footer */
 
 .flex-item3 { 
     height: 300px;
@@ -90,8 +100,7 @@
     justify-content: space-evenly;
     flex-direction: column;
 
-    background: linear-gradient(0deg, rgb(49, 94, 113), rgb(77, 223, 225));
-    border: 1px solid rgb(28, 27, 27);
+    background: linear-gradient(0deg, rgb(49, 94, 113), rgb(209, 158, 88));
 }
 
 .flex-item3-1 {
@@ -111,12 +120,49 @@
     border: 1px solid rgb(28, 27, 27);
 }
 
-.flex-item3-3 {
+.instagram-footer {
     align-self: center;
     border: 1px solid rgb(28, 27, 27);
 }
 .flex-item3-4 {
+    max-width: 500px;
     align-self: center;
 
     border: 1px solid rgb(28, 27, 27);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* адаптивная верстка */
+
+.conteiner {
+max-width: 1200px;             
+    margin: 0px auto;          /* делает блок по центру экрана */
+    padding: 0px 15px;         /* отступ нужен при сужении экрана */
+}
+    
+@media (max-width: 1200px){    /* ширина маленьких мониторов 1024 px */
+    .conteiner{
+        max-width: 970px;     
+    }
+}
+
+@media (max-width: 992px){    /* ширина iPad  768px */
+    .conteiner{
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px){    /* ширина меньше планшетов 768px */
+    .conteiner{
+        max-width: none;
+    }
 }
