@@ -11,17 +11,17 @@
 
 .flex-item1-header {
     width: 100%;
-    min-height: 100vh;
+    height: 600px;
+    /* min-height: 100vh; */
     display: flex;
     justify-content: space-between;
+    align-items: start;
     
     background: linear-gradient(180deg, rgb(228, 109, 191), rgb(77, 223, 225));
     background-size: 100% 100vh;
 }
 
 .flex-item1-1-logo {
-    width: 200px;
-    height: 100px;
     margin: 20px;
 
     border: 1px solid rgb(28, 27, 27);
@@ -34,25 +34,28 @@
 }
 
 .flex-item1-2-nav {
-    height: 50px;
     margin: 20px;
-    flex-wrap: wrap;
-    display: flex;
+    display: flex; 
+    flex-direction: row;
     gap: 10px;
    
     border: 1px solid rgb(28, 27, 27);
 }
 
+@media screen and (max-width: 768px){
+    .flex-item1-2-nav {
+        flex-direction: column;
+    }
+    
+}
+
 /* main */
 
-.flex-item2 {
+.main {
     flex: 1;
 }
 
 .biography {
-    max-width: 1200px;  /* делает блок по центру экрана */
-    margin: 0px auto;
-    padding: 0px 15px;  /* отступ нужен при сужении экрана */
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -69,7 +72,7 @@
     max-width: 25%;
 }
 
-.flex-item2-2 {    
+.instagram {    
     background: linear-gradient(180deg, rgb(180, 185, 24), rgb(77, 223, 225));
     height: 500px;
 }
@@ -94,7 +97,7 @@
 
 /* footer */
 
-.flex-item3 { 
+.footer { 
     height: 300px;
     display: flex;
     justify-content: space-evenly;
